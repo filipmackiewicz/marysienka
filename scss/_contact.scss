@@ -1,0 +1,60 @@
+.contact {
+    margin-bottom: 20px;
+
+
+    &__title {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    &__text {
+        flex-basis: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    &__mapbox {
+        flex-basis: 100%;
+
+        @include mq(tablet-large) {
+            flex-basis: 100%;
+        }
+    }
+
+    &__map {
+        width: 100%;
+        height: 500px;
+        border: 0;
+    }
+
+    &__info {
+        font-size: 1.25rem;
+        color: $font-color-default;
+        text-decoration: none;
+        margin: 20px auto;
+        display: flex;
+        text-align: left;
+
+        & i {
+            margin-right: 5px;
+            min-width: 30px;
+        }
+
+        & a:hover {
+            color: #dd0000;
+        }
+
+    }
+
+    &__data {
+        flex-basis: 100%;
+        text-align: center;
+
+        @include mq(tablet-large) {
+            flex-basis: 100%;
+            text-align: left;
+        }
+    }
+
+
+}

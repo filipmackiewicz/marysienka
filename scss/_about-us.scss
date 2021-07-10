@@ -1,0 +1,53 @@
+.about-us {
+    margin: 30px auto;
+
+    & .container {
+        justify-content: center;
+
+        @include mq(tablet-large) {
+            justify-content: space-between;
+        }
+    }
+
+    &__title {
+        margin: 20px auto;
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    &__image {
+        max-width: 80%;
+        flex-basis: 100%;
+        border-radius: 50%;
+
+        @include mq(tablet-large) {
+            flex-basis: 40%;
+            max-width: 30%;
+        }
+    }
+
+    &__text {
+        flex-basis: 100%;
+        margin: 0 20px;
+        text-align: center;
+
+        @include mq(tablet-large) {
+            flex-basis: 60%;
+            text-align: left;
+        }
+
+        & a {
+            text-decoration: none;
+            color: #000000;
+            font-weight: 500;
+        }
+
+        & a:hover {
+            color: #dd0000;
+        }
+
+        & p {
+            margin: 30px 0;
+        }
+    }
+}

@@ -1,0 +1,126 @@
+.menu {
+    width: 100%;
+    padding: 30px 0;
+
+    & .container {
+        justify-content: center;
+    }
+
+    &__title {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    &__day {
+        text-align: center;
+        color: #fff;
+        font-size: 15px;
+
+        @include mq(smartphone) {
+            font-size: 25px;
+        }
+
+    }
+
+    &__menuoftheday {
+        padding-bottom: 25px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 15px;
+        padding: 15px;
+
+        @include mq(smartphone) {
+            font-size: 20px;
+        }
+
+    }
+
+    &__cart:nth-child(3) {
+        background-image: url('../assets/img/background9.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        &h3 {
+            color: #fff;
+        }
+    }
+
+    &__my-list {
+        text-align: left;
+        padding-left: 50px;
+        padding-bottom: 25px;
+        color: #fff;
+        font-size: 16px;
+        line-height: 120%;
+
+
+        @include mq(smartphone) {
+            font-size: 20px;
+            padding-left: 100px;
+        }
+    }
+
+    &__my-list li {
+        position: relative;
+        list-style-type: none;
+        text-indent: -2em;
+    }
+
+    &__my-list li::before {
+        content: "►";
+        padding-right: 0.5em;
+        color: #C42708;
+    }
+
+    &__cart {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        box-shadow: 10px 10px 10px 10px #888888;
+
+        background-image: url('../assets/img/test2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        &>ol {
+            padding: 20px;
+            font-size: 20px;
+            color: #fff;
+        }
+
+
+
+
+        & h2 {
+            color: #fff;
+        }
+
+        & h3 {
+            font-size: 50px;
+            padding: 30px 30px;
+            text-align: center;
+            color: #fff;
+        }
+
+
+        @include mq(smartphone-large) {
+            flex-basis: 100%;
+            min-height: 250px;
+        }
+
+        @include mq(tablet) {
+            flex-basis: 100%;
+        }
+
+        @include mq(tablet-large) {
+            flex-basis: 70%;
+        }
+
+        &--hidden {
+            display: none;
+        }
+    }
+
+}

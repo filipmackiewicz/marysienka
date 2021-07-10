@@ -1,0 +1,39 @@
+@import 'reset';
+@import 'mixins';
+@import 'variables';
+@import 'typography';
+@import 'header';
+@import 'about-us';
+@import 'menu';
+@import 'contact';
+@import 'footer';
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $main-color;
+    border-radius: 25px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: $screen-max-width;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.page-container {
+    margin: 0 auto;
+    max-width: 1920px;
+    background-color: $color-white;
+    overflow: hidden;
+}
